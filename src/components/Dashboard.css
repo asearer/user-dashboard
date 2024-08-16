@@ -1,0 +1,52 @@
+/* Neumorphic Dashboard Container */
+.dashboard {
+  background-color: #f0f2f5; /* Light background for the whole page */
+  min-height: 100vh;
+}
+
+/* Neumorphic Dashboard Content */
+.dashboard-content {
+  background-color: #e0e5ec; /* Background color for neumorphic effect */
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff; /* Neumorphic shadow */
+  margin-top: 1rem;
+}
+
+/* Dashboard Heading */
+.dashboard h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Neumorphic Dashboard Card */
+.dashboard-card {
+  background: #e0e5ec; /* Same background for consistency */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff; /* Neumorphic shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 4px 4px 10px #babecc, -4px -4px 10px #ffffff; /* More prominent shadow on hover */
+}
+
+/* Card Title */
+.dashboard-card .card-title {
+  font-size: 1.5rem;
+  color: #4b4b4b;
+}
+
+/* Card Text */
+.dashboard-card .card-text {
+  font-size: 1rem;
+  color: #7d7d7d;
+}
+
+/* Card Body Padding */
+.dashboard-card .card-body {
+  padding: 2rem;
+}

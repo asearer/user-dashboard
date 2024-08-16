@@ -1,0 +1,42 @@
+/* Tasks List */
+.tasks-list {
+  background: #e0e5ec;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff;
+}
+
+/* Task Item */
+.task-item {
+  background: #e0e5ec;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 6px #babecc, inset -3px -3px 6px #ffffff;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+.task-item:hover {
+  background-color: #d0d9e0;
+  box-shadow: inset 2px 2px 4px #babecc, inset -2px -2px 4px #ffffff;
+}
+
+/* Status Tag */
+.status-tag {
+  float: right;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.status-tag.pending {
+  background-color: #ffcc00;
+}
+
+.status-tag.completed {
+  background-color: #4caf50;
+}
+
+.status-tag.in-progress {
+  background-color: #2196f3;
+}

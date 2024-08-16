@@ -3,7 +3,8 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import Sidebar from './Sidebar';
 import Statistics from './Statistics';
 import Messages from './Messages';
-import Tasks from './Tasks'; // Importing the Tasks component
+import Tasks from './Tasks';
+import './Dashboard.css'; // Import the CSS file for styling
 
 const Dashboard = () => {
   return (
@@ -20,7 +21,7 @@ const Dashboard = () => {
                 <Card className="dashboard-card">
                   <Card.Body>
                     <Card.Title>Statistics</Card.Title>
-                    <Statistics /> {/* Rendering the Statistics component */}
+                    <Statistics />
                   </Card.Body>
                 </Card>
               </Col>
@@ -28,7 +29,7 @@ const Dashboard = () => {
                 <Card className="dashboard-card">
                   <Card.Body>
                     <Card.Title>Messages</Card.Title>
-                    <Messages /> {/* Rendering the Messages component */}
+                    <Messages />
                   </Card.Body>
                 </Card>
               </Col>
@@ -36,7 +37,7 @@ const Dashboard = () => {
                 <Card className="dashboard-card">
                   <Card.Body>
                     <Card.Title>Tasks</Card.Title>
-                    <Tasks /> {/* Rendering the Tasks component */}
+                    <Tasks />
                   </Card.Body>
                 </Card>
               </Col>
@@ -49,6 +50,8 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
 
 
 

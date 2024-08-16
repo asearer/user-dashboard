@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
+import './UserProfile.css'; // Import the CSS file for styling
 
 // Sample user data
 const user = {
@@ -15,7 +16,7 @@ const UserProfile = () => {
     <Container className="my-4">
       <Row>
         <Col md={4}>
-          <Card>
+          <Card className="profile-card">
             <Card.Body>
               <Card.Title>{user.name}</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">{user.role}</Card.Subtitle>
@@ -25,12 +26,12 @@ const UserProfile = () => {
           </Card>
         </Col>
         <Col md={8}>
-          <Card>
+          <Card className="profile-card">
             <Card.Body>
               <Card.Title>Skills</Card.Title>
               <ListGroup variant="flush">
                 {user.skills.map((skill, index) => (
-                  <ListGroup.Item key={index}>{skill}</ListGroup.Item>
+                  <ListGroup.Item key={index} className="profile-skill">{skill}</ListGroup.Item>
                 ))}
               </ListGroup>
             </Card.Body>
@@ -42,3 +43,4 @@ const UserProfile = () => {
 };
 
 export default UserProfile;
+
