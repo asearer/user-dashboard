@@ -7,22 +7,24 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Nav className="flex-column">
-        <Nav.Link as={Link} to="/home" className="nav-item">
-          <FaHome className="nav-icon" /> Home
+        <Nav.Link as={Link} to="/dashboard" className="nav-item">
+          <FaHome className="nav-icon" /> Dashboard
+        </Nav.Link>
+        <Nav.Link as={Link} to="/messages" className="nav-item">
+          <FaUser className="nav-icon" /> Messages
+        </Nav.Link>
+        <Nav.Link as={Link} to="/tasks" className="nav-item">
+          <FaCog className="nav-icon" /> Tasks
         </Nav.Link>
         <Nav.Link as={Link} to="/profile" className="nav-item">
           <FaUser className="nav-icon" /> Profile
         </Nav.Link>
-        <Nav.Link as={Link} to="/settings" className="nav-item">
-          <FaCog className="nav-icon" /> Settings
-        </Nav.Link>
-        <Nav.Link as={Link} to="/logout" className="nav-item">
-          <FaSignOutAlt className="nav-icon" /> Logout
-        </Nav.Link>
+        
       </Nav>
     </div>
   );
 };
 
 export default Sidebar;
+
 
