@@ -1,20 +1,58 @@
 /* Neumorphic UserProfile Card */
 .profile-card {
   background: #e0e5ec; /* Neumorphic background */
-  border: none;
-  border-radius: 15px;
+  border-radius: 15px; /* Consistent border radius */
   box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff; /* Neumorphic shadow */
-  transition: box-shadow 0.3s; /* Smooth transition */
+  transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow and hover effects */
+  padding: 2rem; /* Add padding for consistent spacing */
+  margin: 1rem 0; /* Margin for spacing around the card */
+  max-width: 100%; /* Ensure the card takes the full width of its container */
+  text-align: center; /* Center text content */
 }
 
 .profile-card:hover {
   box-shadow: 4px 4px 10px #babecc, -4px -4px 10px #ffffff; /* More prominent shadow on hover */
+  transform: scale(1.05); /* Slight scale up on hover */
 }
 
 /* Neumorphic ListGroup Item */
 .profile-skill {
   background: #e0e5ec; /* Same background for consistency */
-  border: none;
-  border-radius: 10px;
+  border-radius: 15px; /* Consistent border radius */
   box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff; /* Neumorphic inset shadow */
+  padding: 1rem; /* Padding for consistent spacing */
+  margin: 0.5rem 0; /* Margin for spacing between skill items */
+  text-align: center; /* Center text content */
 }
+
+.profile-skill:hover {
+  box-shadow: inset 2px 2px 4px #babecc, inset -2px -2px 4px #ffffff; /* Subtle shadow effect on hover */
+}
+
+/* Profile Name Styling */
+.profile-card .card-title {
+  font-size: 1.8rem; /* Font size for the name */
+  font-weight: bold; /* Bold font for prominence */
+  color: #333; /* Darker color for contrast */
+  margin-bottom: 1rem; /* Space below the name */
+}
+
+/* Profile Role and Bio Styling */
+.profile-card .card-subtitle {
+  font-size: 1.2rem; /* Slightly smaller font for the role */
+  color: #7d7d7d; /* Muted color for the role */
+  margin-bottom: 1rem; /* Space below the role */
+}
+
+.profile-card .card-text {
+  font-size: 1rem; /* Font size for the bio and other text */
+  color: #7d7d7d; /* Slightly muted color for the text */
+  margin-bottom: 1.5rem; /* Space below the text */
+}
+
+/* Container Adjustments */
+.container {
+  max-width: 1000px; /* Maximum width for the container */
+  margin: auto; /* Center the container */
+}
+

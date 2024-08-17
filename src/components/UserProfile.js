@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
-import './UserProfile.css'; // Import the CSS file for styling
+import './UserProfile.css'; 
 
 // Sample user data
 const user = {
