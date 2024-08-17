@@ -21,7 +21,7 @@
   width: calc(100% - 2rem); /* Ensure items take full width of container with spacing */
   max-width: 350px; /* Set a max-width for uniform item size */
   display: flex; /* Flexbox for internal layout */
-  justify-content: center; /* Center content horizontally */
+  justify-content: space-between; /* Space between content and status tag */
   align-items: center; /* Center content vertically */
   text-align: center; /* Center text content */
   margin: 0.5rem; /* Margin for spacing */
@@ -32,6 +32,7 @@
   box-shadow: 4px 4px 10px #babecc, -4px -4px 10px #ffffff; /* More prominent shadow on hover */
   transform: scale(1.05); /* Slight scale up on hover */
 }
+
 
 
 
