@@ -1,42 +1,63 @@
-/* Tasks List */
+/* Neumorphic Tasks List */
 .tasks-list {
-  background: #e0e5ec;
-  border-radius: 15px;
-  box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff;
+  background: #e0e5ec; /* Neumorphic background */
+  border-radius: 15px; /* Consistent border radius */
+  box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff; /* Neumorphic shadow */
+  padding: 1rem; /* Consistent padding */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 1rem; /* Space between items */
 }
 
-/* Task Item */
+/* Neumorphic Task Item */
 .task-item {
-  background: #e0e5ec;
-  border: none;
-  border-radius: 10px;
-  box-shadow: inset 3px 3px 6px #babecc, inset -3px -3px 6px #ffffff;
-  margin-bottom: 0.5rem;
-  padding: 1rem;
-  transition: background-color 0.3s;
+  background: #e0e5ec; /* Neumorphic background */
+  border-radius: 15px; /* Consistent border radius */
+  padding: 1rem; /* Padding for inner content */
+  box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff; /* Neumorphic inset shadow */
+  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s; /* Smooth transitions */
+  width: calc(100% - 2rem); /* Ensure items take full width of container with spacing */
+  max-width: 350px; /* Set a max-width for uniform item size */
+  display: flex; /* Flexbox for internal layout */
+  justify-content: space-between; /* Space between content and status tag */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Center text content */
+  margin: 0.5rem; /* Margin for spacing */
 }
 
+/* Hover Effect for Task Item */
 .task-item:hover {
-  background-color: #d0d9e0;
-  box-shadow: inset 2px 2px 4px #babecc, inset -2px -2px 4px #ffffff;
+  background-color: #d0d9e0; /* Slightly different color on hover */
+  box-shadow: 4px 4px 10px #babecc, -4px -4px 10px #ffffff; /* More prominent shadow on hover */
+  transform: scale(1.05); /* Slight scale up on hover */
 }
 
-/* Status Tag */
+/* Status Tag (Pills) */
 .status-tag {
-  float: right;
+  display: inline-block;
   padding: 0.5rem 1rem;
-  border-radius: 10px;
-  color: #fff;
+  border-radius: 50px; /* Pill shape */
+  font-size: 0.875rem; /* Smaller font size */
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff; /* Text color */
+  margin-left: 1rem; /* Space between text and status tag */
 }
 
+/* Status Colors */
 .status-tag.pending {
-  background-color: #ffcc00;
+  background-color: #ffcc00; /* Yellow for pending */
 }
 
 .status-tag.completed {
-  background-color: #4caf50;
+  background-color: #4caf50; /* Green for completed */
 }
 
 .status-tag.in-progress {
-  background-color: #2196f3;
+  background-color: #2196f3; /* Blue for in-progress */
 }
+
+
+

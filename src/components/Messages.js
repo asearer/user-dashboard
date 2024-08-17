@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListGroup, Badge } from 'react-bootstrap';
-import './Messages.css'; // Ensure this path is correct
+import './Messages.css'; 
 
 // Sample messages data with statuses
 const messages = [

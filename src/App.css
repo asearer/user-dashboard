@@ -6,7 +6,7 @@ body {
 
 /* Neumorphic Sidebar */
 .sidebar {
-  background: #e0e5ec; /* Lighter background for neumorphism */
+  background: #e0e5ec; /* Neumorphic background */
   height: 100vh;
   padding: 2rem 1rem;
   color: #333;
@@ -50,7 +50,7 @@ body {
 /* Neumorphic Dashboard Content */
 .dashboard-content {
   background-color: #e0e5ec;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 2rem;
   box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff;
   margin-top: 1rem;
@@ -94,26 +94,33 @@ body {
   padding: 2rem;
 }
 
-/* Sidebar Link Hover Effect */
-.sidebar .nav-link {
-  position: relative;
-  overflow: hidden;
+/* Neumorphic Messages List */
+.messages-list {
+  background: #e0e5ec; /* Neumorphic background */
+  border-radius: 15px; /* Consistent border radius */
+  box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff; /* Neumorphic shadow */
+  padding: 1.5rem; /* Increased padding for better content spacing */
+  margin: 2rem 0; /* Margin for spacing around the list */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Align items vertically */
+  gap: 1rem; /* Space between items */
 }
 
-.sidebar .nav-link:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 0;
-  top: 50%;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: height 0.3s, top 0.3s;
+/* Neumorphic Message Item */
+.message-item {
+  background: #e0e5ec; /* Neumorphic background */
+  border-radius: 15px; /* Consistent border radius */
+  padding: 1rem; /* Padding for inner content */
+  box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff; /* Neumorphic inset shadow */
+  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s; /* Smooth transitions */
+  width: 100%; /* Ensure items take full width of container */
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
 }
 
-.sidebar .nav-link:hover:before {
-  height: 100%;
-  top: 0;
+.message-item:hover {
+  background-color: #d0d9e0; /* Slightly different color on hover */
+  box-shadow: 4px 4px 10px #babecc, -4px -4px 10px #ffffff; /* More prominent shadow on hover */
+  transform: scale(1.05); /* Slight scale up on hover */
 }
-
-
