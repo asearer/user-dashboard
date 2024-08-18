@@ -50,9 +50,24 @@
   margin-bottom: 1.5rem; /* Space below the text */
 }
 
+/* Profile Picture Styling */
+.profile-picture {
+  width: 100px; /* Width of the profile picture */
+  height: 100px; /* Height of the profile picture */
+  object-fit: cover; /* Ensures the image covers the entire area */
+  box-shadow: 4px 4px 8px #babecc, -4px -4px 8px #ffffff; /* Neumorphic shadow */
+  margin-top: -150px; /* Move the profile picture up by 25px */
+}
+
 /* Container Adjustments */
 .container {
   max-width: 1000px; /* Maximum width for the container */
   margin: auto; /* Center the container */
+  padding: 1rem; /* Consistent padding */
+  background: #e0e5ec; /* Neumorphic background */
+  border-radius: 15px; /* Consistent border radius */
+  box-shadow: 8px 8px 15px #babecc, -8px -8px 15px #ffffff; /* Neumorphic shadow */
 }
+
+
 

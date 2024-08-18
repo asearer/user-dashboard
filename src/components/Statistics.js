@@ -15,7 +15,7 @@ const Statistics = () => {
       <div className="stat-item">
         <FaChartLine className="stat-icon" />
         <div className="stat-text">
-          <h3>75%</h3>
+          <h3>+75%</h3>
           <p>Growth</p>
         </div>
       </div>
